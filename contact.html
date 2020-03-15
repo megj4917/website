@@ -3,50 +3,43 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            letter-spacing: 1px;
-            line-height: 25px;
-            background-color: lightcyan;
-        }
-        .main {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        .topnav {
-        overflow: hidden;
-        background-color: white;
-        padding: 0;
-        }
-
-        .topnav a {
-          float: right;
-          color: black;
-          text-align: center;
-          padding: 20px 16px;
-          text-decoration: none;
-          font-size: 20px;
-        }
-
-        .topnav a:hover {
-          background-color: #ddd;
-          color: black;
-        }
-        .topnav p{
-            float: left;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            font-size: 25px;
-            padding-left: 20px;
-            font-family: 'Franklin Gothic'
-        }
         h2 {
         font-family: 'Comic Sans MS';
         font-size: 30px;
         }
+        .contact-form {
+            margin-right: 50px;
+            float: left;
+        }
+        .form {
+            width: 600px;
+            background: transparent;
+            outline:none;
+            border:none;
+            border-bottom:2px solid black;
+            color: grey;
+            font-size: 20px;
+            margin: 20px;
+        }
+        .submit {
+            margin-left: 40px;
+            background-color: purple;
+            font-size:25px;
+            color:white;
+            width:160px;
+            height:40px;
+        }
+        p {
+        padding-right: 500px;
+        }
+        img {
+        width: 70px;
+        height: 70px;
+        margin:15px;
+        }
     </style>
+    <title>Contact Form - Megan Jacob</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div class="topnav">
@@ -57,10 +50,26 @@
         <a href="index.html">About Me</a>
     </div>
     <div class="main">
-        <h2>Contact Me</h2>
-        <h3><b>LinkedIn</b></h3>
-        <a href="https://www.linkedin.com/in/megan-jacob-9540011a0/">Connect on LinkedIn</a>
-        
+        <h2>Contact Form</h2>
+        <p>If you have any questions about what I do or any opportunities for me please contact me through this form. I will respond within 48 hours.</p>
+        <div class="contact-form">
+            <form id="contact" method="post" action="send.php">
+                <input name="name" type="text" class="form" placeholder="Your name" required />
+                <br>
+                <input name="email" type="email" class="form" placeholder="Your email" required />
+                <br>
+                <textarea name="message" class="form" placeholder="Your message" row="50" column="100" required></textarea>
+                <br>
+                <input type="submit" class="submit" value="SUBMIT" />
+            </form>
+        </div>
+        <h3><b>Connect With Me</b></h3>
+        <a href="https://www.facebook.com/megan.jacob.3388">
+            <img src="https://i.ibb.co/Vgh2tH3/facebooklogo.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/megan-jacob-9540011a0/">
+            <img src="https://i.ibb.co/rZvgr2s/Linked-In-Logo.png" />
+        </a>
     </div>
 </body>
 </html>
