@@ -11,8 +11,8 @@
             background-color: lightcyan;
         }
         .main {
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
         .topnav {
         overflow: hidden;
@@ -39,7 +39,7 @@
             text-align: center;
             text-decoration: none;
             font-size: 25px;
-            padding-left: 20px;
+            padding-left: 50px;
             font-family: 'Franklin Gothic'
         }
         .title {
@@ -59,10 +59,29 @@
         font-family: 'Comic Sans MS';
         font-size: 30px;
         }
+        .projects {
+            margin-left: 70px;
+            color: white;
+            font-size: 30px;
+            position: relative;
+        }
+        
+        .text{
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .projects img:hover{
+            border: 2px solid black;
+        }
     </style>
 </head>
 <body>
-    <div class="topnav" >
+    <div class="topnav">
         <p><b><i>Megan Jacob</i></b></p>
         <a href="contact.html">Contact</a>
         <a href="experience.html">Experience</a>
@@ -85,6 +104,13 @@
         </p>
         <h3><b>Technical Skills: C++, HTML/CSS, Java Script, Python, Visual Studio</b></h3>
         <h3><b>Soft Skills: Public Speaking, Leadership, Microsoft Office, Google Suite</b></h3>
+    </div>
+    <div class="projects">
+        <img src="https://i.ibb.co/2kTSdY2/IMG-1493.jpg"/>
+        <div class="text">
+            <p style="text-align: center;"><b>Hackathon</b></p>
+            <p><b>Superposition IV - San Francisco</b></p>
+        </div>
     </div>
 </body>
 </html>
