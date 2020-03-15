@@ -1,6 +1,6 @@
 <?php
 	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$visitor_email = $_POST['email'];
 	$message = $_POST['message'];
 
 	$email_from = 'meganjacocb2004@yahoo.com';
@@ -14,7 +14,7 @@
 	$email_to = 'meganjacob2004@yahoo.com';
 
 	$headers = "From: $email_from \r\n";
-	$headers = "Reply-To: $visitor_email \r\n";
+	$headers .= "Reply-To: $visitor_email \r\n";
 
 	mail($email_to,$email_subject,$email_body, $headers);
 
