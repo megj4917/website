@@ -11,6 +11,6 @@
 
 	$email_to = 'meganjacob2004@yahoo.com';
 
-	mail($to, $email_subject, $email_body);
+	mail($email_to, $email_subject, $email_body);
 	header("Location: contact.html");
 ?>
