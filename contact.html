@@ -33,11 +33,11 @@
             height: 40px;
         }
 
-        p {
+        .contact p {
             padding-right: 500px;
         }
 
-        img {
+        .connect img {
             width: 70px;
             height: 70px;
             margin: 15px;
@@ -49,14 +49,26 @@
 <body>
     <div class="topnav">
         <p><b><i>Megan Jacob</i></b></p>
+        <a href="https://www.facebook.com/megan.jacob.3388">
+            <img src="https://i.ibb.co/Vgh2tH3/facebooklogo.png" class="logo"/>
+        </a>
+        <a href="https://www.linkedin.com/in/megan-jacob-9540011a0/">
+            <img src="https://i.ibb.co/rZvgr2s/Linked-In-Logo.png" class="logo"/>
+        </a>
+        <a href="https://github.com/megj4917">
+            <img src="https://i.ibb.co/17n29ZY/Git-Hub-Mark-120px-plus.png" class="logo"/>
+        </a>
+        <div class="nav">
         <a href="contact.html">Contact</a>
         <a href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="index.html">About Me</a>
+        </div>
+        
     </div>
     <div class="main">
         <h2>Contact Form</h2>
-        <p>If you have any questions about what I do or any opportunities for me please contact me through this form. I will respond within 48 hours.</p>
+        <p class="contact">If you have any questions about what I do or any opportunities for me please contact me through this form. I will respond within 48 hours.</p>
         <div class="contact-form">
             <form id="contact" name = "input" method="POST" action="https://formspree.io/meganjacob2004@yahoo.com">
                 <input name="name" type="text" class="form" placeholder="Your name" required />
@@ -68,6 +80,7 @@
                 <input type="submit" class="submit" value="SUBMIT" />
             </form>
         </div>
+        <div class="connect">
         <h3><b>Connect With Me</b></h3>
         <a href="https://www.facebook.com/megan.jacob.3388">
             <img src="https://i.ibb.co/Vgh2tH3/facebooklogo.png" />
@@ -75,6 +88,7 @@
         <a href="https://www.linkedin.com/in/megan-jacob-9540011a0/">
             <img src="https://i.ibb.co/rZvgr2s/Linked-In-Logo.png" />
         </a>
+        </div>
     </div>
 </body>
 </html>
